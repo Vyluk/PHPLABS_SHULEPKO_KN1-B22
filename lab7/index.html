@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт до лабораторної роботи №7</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .info, .task, .screenshots {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .task h4 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .screenshot {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Звіт до лабораторної роботи №7</h1>
+
+    <div class="info">
+        <h2>Основна інформація</h2>
+        <ul>
+            <li><strong>Номер лабораторної роботи:</strong> 7</li>
+            <li><strong>Тема:</strong> Мініпроєкт: створення динамічного вебдодатка</li>
+            <li><strong>ПІБ виконавця:</strong> Шулепко Роман Андрійович</li>
+            <li><strong>Група:</strong> KN1-B22</li>
+            <li><strong>Дата виконання/здачі:</strong> 05.06.2025</li>
+            <li><strong>Варіант:</strong> 7 — Система управління навчальними матеріалами</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h2>Завдання проєкту</h2>
+
+        <div class="task">
+            <h4>Завдання 1</h4>
+            <p><strong>Умова:</strong> Створити базу даних MySQL для зберігання матеріалів, авторів та категорій.</p>
+            <p>База даних створена в phpMyAdmin, назва: <code>materials_db</code>, таблиці: <code>materials</code>, <code>authors</code>, <code>categories</code>.</p>
+        </div>
+
+        <div class="task">
+            <h4>Завдання 2</h4>
+            <p><strong>Умова:</strong> Реалізувати інтерфейс для додавання нових матеріалів до бібліотеки.</p>
+            <p><a href="./add_material.php" target="_blank">Посилання на інтерфейс додавання матеріалів</a></p>
+        </div>
+
+        <div class="task">
+            <h4>Завдання 3</h4>
+            <p><strong>Умова:</strong> Відобразити звіт про найбільш популярні категорії матеріалів.</p>
+            <p><a href="./report.php" target="_blank">Посилання на звіт по категоріях</a></p>
+        </div>
+
+        <p><strong>Дизайн:</strong> Всі сторінки оформлені з використанням шаблону <code>AdminLTE</code>.</p>
+    </div>
+
+    <div class="screenshots">
+        <h2>Скріншоти роботи</h2>
+
+        <p><strong>Створена база даних MySQL:</strong></p>
+        <img src="./z1.png" alt="Скріншот форми додавання матеріалу" class="screenshot">
+
+        <p><strong>Інтерфейс додавання матеріалу:</strong></p>
+        <img src="./z2.png" alt="Скріншот звіту" class="screenshot">
+
+        <p><strong>Звіт по категоріях:</strong></p>
+        <img src="./z3.png" alt="Скріншот звіту" class="screenshot">
+    </div>
+
+</body>
+</html>
